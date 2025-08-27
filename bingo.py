@@ -100,7 +100,7 @@ for xloop in range(5):
             draw.multiline_text((textx, texty), smalltext, fill=textcolor, font=smallfont, align="center")
 
 lostfoundlogo = Image.open(logo).convert("RGBA")
-
+output = os.path.join(installpath, "output.png")
 canvas.paste (lostfoundlogo, (0,0),lostfoundlogo)
 canvas.paste (playarea, (0,680), playarea)
-canvas.save(r"C:\Users\Alex\Desktop\Bingo\output.png")
+canvas.save(output)
